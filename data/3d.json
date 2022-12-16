@@ -1,0 +1,14 @@
+{
+    "3d0": {
+        "title": "Chess set",
+        "imageUrl": "media/images/3d_artwork/Chess.png",
+        "imageAlt": "Chess set",
+        "type": "3D"
+    },
+    "3d1": {
+        "title": "Valorant Knife",
+        "imageUrl": "media/images/3d_artwork/Valorant_Knife.png",
+        "imageAlt": "Valorant Knife",
+        "type": "3D"
+    }
+}
