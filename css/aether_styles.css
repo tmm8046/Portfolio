@@ -1,3 +1,6 @@
+header{
+    min-height: 1080px;
+}
 #navbar, #footer {
     background-color: rgb(13, 20, 25);
 }

@@ -34,6 +34,13 @@ p.hint {
     font-size: 72px;
     justify-content: left;
     text-align: left;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#position_title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 h1 { 
@@ -92,7 +99,7 @@ header{
     text-align: left;
     justify-content: left;
 }
-#name_header h2 {
+#position_title {
     text-align: left;
 }
 #about {
@@ -103,14 +110,17 @@ header{
     text-align: left;
 }
 img.portrait {
-    width: 365px;
-    height: auto;
     margin-top: 5px;
     margin-bottom: 25px;
     display: block;
     margin-right: 30px;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.479);
-    }
+}
+
+img.portrait, #name_header{
+    height: 500px;
+}
+
 a {
     color:rgb(255, 0, 0);
     text-align: center;
@@ -238,6 +248,10 @@ div.contact{
     margin-right: auto;
     padding-bottom: 13%;
     justify-content: center;
+}
+#_3dGallary {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 div.project{
     background-color: transparent;
@@ -385,8 +399,8 @@ footer{
 
 }
 @media screen and (max-width: 1000px) {
-    body{
-        font-weight: 400;
+    *{
+        font-weight: 400 !important;
     }
     #projects, section.graphics{
     grid-template-columns: repeat(1, auto);
@@ -444,8 +458,16 @@ footer{
         text-align: center;
     }
 
+    #position_title {
+        font-size: 36px;
+    }
+
     #main_title{ 
         font-size: 84px;
+    }
+
+    img.portrait, #name_header{
+        height: auto;
     }
 
     header, #name_header, #name_header h2, #main_title{
@@ -509,7 +531,7 @@ footer{
     }
     #bio{
         width: 80vw;
-        font-size: 36px;
+        font-size: 30px;
     }
     a.large{
         width: 600px;
@@ -526,8 +548,5 @@ footer{
         font-size: 36px;
     }
 }
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-    
 
-}
 
