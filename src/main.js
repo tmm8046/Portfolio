@@ -54,7 +54,7 @@ const handleResponse = async (url, method = "get") => {
 
 }
 
-const createProject = (title, imageUrl, imageAlt, about, linkUrl = null, linkText = linkUrl) => {
+const createProject = (title, imageUrl, imageAlt, about, role, linkUrl = null, linkText = linkUrl) => {
     let project = document.createElement("div");
     project.className = "project";
 
@@ -80,6 +80,7 @@ const createProject = (title, imageUrl, imageAlt, about, linkUrl = null, linkTex
     projDesc.appendChild(h2);
 
     projDesc.innerHTML += `${about}<br><br>`;
+    projDesc.innerHTML += `Role: ${role}<br><br>`;
 
     if(linkUrl != null){
         let a = document.createElement("a");
@@ -100,13 +101,13 @@ const loadProjects = (obj) => {
     for(let i = 0; i < keys.length; i++) {
         let project = obj[keys[i]];
         if(project.linkUrl && project.linkText){
-            createProject(project.title, project.imageUrl, project.imageAlt, project.about, project.linkUrl, project.linkText);
+            createProject(project.title, project.imageUrl, project.imageAlt, project.about, project.role, project.linkUrl, project.linkText);
         }
         else if(project.linkUrl) {
-            createProject(project.title, project.imageUrl, project.imageAlt, project.about, project.linkUrl);
+            createProject(project.title, project.imageUrl, project.imageAlt, project.about, project.role, project.linkUrl);
         } 
         else {
-            createProject(project.title, project.imageUrl, project.imageAlt, project.about);
+            createProject(project.title, project.imageUrl, project.imageAlt, project.about, project.role);
         }
     }
 }
