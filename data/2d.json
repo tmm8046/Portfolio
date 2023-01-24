@@ -36,84 +36,96 @@
         "type": "2D"
     },
     "2d6": {
-        "title": "Lightning",
-        "imageUrl": "media/images/artwork/Lightning.png",
-        "imageAlt": "Lightning",
+        "title": "Xian",
+        "imageUrl": "media/images/artwork/Xian.png",
+        "imageAlt": "Xian",
         "type": "2D"
     },
     "2d7": {
-        "title": "Air",
-        "imageUrl": "media/images/artwork/Air.png",
-        "imageAlt": "Air",
+        "title": "Thalia",
+        "imageUrl": "media/images/artwork/Thalia.png",
+        "imageAlt": "Thalia",
         "type": "2D"
     },
     "2d8": {
-        "title": "Earth",
-        "imageUrl": "media/images/artwork/Earth.png",
-        "imageAlt": "Earth",
+        "title": "Nessa",
+        "imageUrl": "media/images/artwork/Nessa_(Olympus).png",
+        "imageAlt": "Nessa",
         "type": "2D"
     },
     "2d9": {
-        "title": "Water",
-        "imageUrl": "media/images/artwork/Water.png",
-        "imageAlt": "Water",
+        "title": "Conny",
+        "imageUrl": "media/images/artwork/Conny.png",
+        "imageAlt": "Conny",
         "type": "2D"
     },
     "2d10": {
+        "title": "Brayden",
+        "imageUrl": "media/images/artwork/Brayden.png",
+        "imageAlt": "Brayden",
+        "type": "2D"
+    },
+    "2d11": {
+        "title": "The General",
+        "imageUrl": "media/images/artwork/Ares_General.png",
+        "imageAlt": "The General",
+        "type": "2D"
+    },
+    "2d12": {
         "title": "Persona",
         "imageUrl": "media/images/artwork/Persona.png",
         "imageAlt": "Persona",
         "type": "2D"
     },
-    "2d11": {
+    "2d13": {
         "title": "Miles Morales",
         "imageUrl": "media/images/artwork/MilesMorales.png",
         "imageAlt": "Miles Morales",
         "type": "2D"
     },
-    "2d12": {
+    "2d14": {
         "title": "L'uomo Del Misterio",
         "imageUrl": "media/images/artwork/L'uomoDelMisterio.png",
         "imageAlt": "L'uomo Del Misterio",
         "type": "2D"
     },
-    "2d13": {
+    "2d15": {
         "title": "Dylan",
         "imageUrl": "media/images/artwork/Dylan.png",
         "imageAlt": "Dylan",
         "type": "2D"
     },
-    "2d14": {
+    "2d16": {
         "title": "Halo",
         "imageUrl": "media/images/artwork/Halo.png",
         "imageAlt": "Halo",
         "type": "2D"
     },
-    "2d15": {
+    "2d17": {
         "title": "Melena",
         "imageUrl": "media/images/artwork/Melena.png",
         "imageAlt": "Melena",
         "type": "2D"
     },
-    "2d16": {
+    "2d18": {
         "title": "Nighthawk",
         "imageUrl": "media/images/artwork/Nighthawk.png",
         "imageAlt": "Nighthawk",
         "type": "2D"
     },
-    "2d17": {
+    "2d19": {
         "title": "Okami",
         "imageUrl": "media/images/artwork/Okami.png",
         "imageAlt": "Okami",
         "type": "2D"
     },
-    "2d21": {
+    "2d20": {
         "title": "Freshman Year",
         "imageUrl": "media/images/artwork/Chapter_I.png",
         "imageAlt": "Freshman Year",
         "type": "2D"
     },
-    "2d22": {
+    "2d21": {
         "title": "Sophomore Year",
         "imageUrl": "media/images/artwork/Chapter_II.png",
         "imageAlt": "Sophomore Year",
