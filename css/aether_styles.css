@@ -1,6 +1,18 @@
-header{
-    min-height: 1080px;
+body{
+    background-color: rgb(13, 20, 25);
 }
+
+header{
+    min-height: 700px;
+    background-image: url("../media/images/aether/backgrounds/aether_earth_map.png");
+    background-size: 100%;
+}
+
+#main_title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 #navbar, #footer {
     background-color: rgb(13, 20, 25);
 }
