@@ -1,13 +1,13 @@
 {
     "2d0": {
         "title": "Okami",
-        "imageUrl": "media/images/turnarounds/okami.png",
+        "imageUrl": "media/images/turnarounds/Okami.png",
         "imageAlt": "Okami",
         "type": "Concept"
     },
     "2d1": {
         "title": "Nessa",
-        "imageUrl": "media/images/turnarounds/nessa.png",
+        "imageUrl": "media/images/turnarounds/Nessa.png",
         "imageAlt": "Nessa",
         "type": "Concept"
     }
