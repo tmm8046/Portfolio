@@ -1,10 +1,13 @@
+const main = document.querySelector("main");
 const projects = document.querySelector("#projects");
 const _2dGallary = document.querySelector("#_2dGallary");
 const _3dGallary = document.querySelector("#_3dGallary");
+const conceptArt = document.querySelector('#turnarounds');
 
 const projectURL = "./data/projects.json";
 const _2dURL = "./data/2d.json";
 const _3dURL = "./data/3d.json";
+const turnaroundsURL = "./data/turnarounds.json";
 
 const init = () => {
     
@@ -12,6 +15,7 @@ const init = () => {
     handleResponse(projectURL);
     handleResponse(_2dURL);
     handleResponse(_3dURL);
+    handleResponse(turnaroundsURL);
     
 }
 
@@ -47,6 +51,9 @@ const handleResponse = async (url, method = "get") => {
             loadArtwork(obj);
             break;
         case _3dURL:
+            loadArtwork(obj);
+            break;
+        case turnaroundsURL:
             loadArtwork(obj);
             break;
     }
@@ -119,6 +126,9 @@ const createArtwork = (title, imageUrl, imageAlt, type = "2D") => {
     let image = document.createElement("img");
     image.src = imageUrl;
     image.alt = imageAlt;
+    image.onclick = function() {
+        expandImg(imageUrl, imageAlt);
+    };
     graphic.appendChild(image);
 
     let desc = document.createElement("div");
@@ -133,7 +143,8 @@ const createArtwork = (title, imageUrl, imageAlt, type = "2D") => {
         _3dGallary.appendChild(graphic);
     }
     else {
-        _2dGallary.appendChild(graphic);
+        if(type === "2D") _2dGallary.appendChild(graphic);
+        else conceptArt.appendChild(graphic);
     }
 }
 
@@ -144,6 +155,30 @@ const loadArtwork = (obj) => {
         let graphic = obj[keys[i]];
         createArtwork(graphic.title, graphic.imageUrl, graphic.imageAlt, graphic.type);
     }
+}
+
+const expandImg = (imageUrl, imageAlt) => {
+    let container = document.createElement('div');
+    container.className = "container";
+    let overlay = document.createElement('div');
+    overlay.className = "overlay";
+    let image = document.createElement("img");
+    image.id = "expanded";
+    image.src = imageUrl;
+    image.alt = imageAlt;
+    container.onclick = function() {
+        deleteImage(container);
+    };
+    container.appendChild(image);
+    container.appendChild(overlay);
+    main.appendChild(container);
+}
+
+const deleteImage = (container) => {
+    if(main.contains(container)) {
+        main.removeChild(container);
+    }
+
 }
 
 const burger = () => {

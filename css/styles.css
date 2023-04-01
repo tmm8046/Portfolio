@@ -205,7 +205,7 @@ a.large:hover{
 #proj{
     margin-bottom: 5px;
 }
-#art, #art3d{
+#art, #art3d, #conceptArt{
     margin-bottom: 30px;
 }
 #proj, #art, #art3d{
@@ -249,7 +249,7 @@ div.contact{
     padding-bottom: 13%;
     justify-content: center;
 }
-#_3dGallary {
+#_3dGallary{
     margin-bottom: 50px;
     padding-bottom: 50px;
 }
@@ -333,6 +333,14 @@ div.graphic_desc h2{
     color:  rgb(255, 255, 255);
     font-size: 24px;
 }
+
+div.graphic:hover img {
+    position: absolute;
+    width: 360px;
+    transform: translate(-5px, -5px);
+    justify-content: center;
+}
+
 div.graphic:hover div.graphic_desc{
     visibility: visible;
     position: relative;
@@ -341,12 +349,51 @@ div.graphic:hover div.graphic_desc{
     transform: translate(-5px, -10px);
     background: rgb(255, 0, 0);
 }
-div.graphic:hover img {
-    position: absolute;
-    width: 360px;
-    transform: translate(-5px, -5px);
-    justify-content: center;
+
+
+#turnarounds div.graphic,  #turnarounds div.graphic img{
+    width: 600px;
 }
+
+#turnarounds div.graphic:hover img {
+    width: 610px;
+}
+
+#turnarounds div.graphic div.graphic_desc{
+    visibility: hidden;
+    width: 610px;
+}
+
+#expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    height: 90%;
+    width: auto;
+    transition: all 1.0s ease-in-out;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+
+.container .overlay {
+    display: block;
+}
+
 #footer{
     height: 8em;
 }

@@ -1,0 +1,15 @@
+{
+    "2d0": {
+        "title": "Okami",
+        "imageUrl": "media/images/turnarounds/okami.png",
+        "imageAlt": "Okami",
+        "type": "Concept"
+    },
+    "2d1": {
+        "title": "Nessa",
+        "imageUrl": "media/images/turnarounds/nessa.png",
+        "imageAlt": "Nessa",
+        "type": "Concept"
+    }
+
+}
