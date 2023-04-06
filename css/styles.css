@@ -370,8 +370,8 @@ div.graphic:hover div.graphic_desc{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    height: 80%;
-    width: auto;
+    max-height: 80%;
+    max-width: 90%;
     transition: all 1.0s ease-in-out;
 }
 
@@ -452,8 +452,18 @@ footer{
 
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    *{
+        font-weight: 400 !important;
+    }
+
+    header {
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+    }
 
     #bio {
+        width: 80vw;
         font-size: 16px !important;
     }
 
@@ -461,12 +471,40 @@ footer{
         width: 500px !important;
     }
 
+    img.portrait{
+        width: 60%;
+        height: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
     #position_title {
         font-size: 30px!important;
     }
 
+    img.portrait, #name_header{
+        height: auto;
+    }
+
+    header, #name_header, #name_header h2, #main_title{
+        margin: auto;
+        text-align: center;
+    }
+
     h1 {
         font-size: 48px !important;
+    }
+
+    p.hint {
+        font-size: 18px;
+    }
+
+    #mobile_hint {
+        display: block;
+    }
+
+    #desktop_hint {
+        display: none;
     }
 
     #projects, section.graphics{
@@ -500,15 +538,20 @@ footer{
     div.graphic, div.graphic img {
         width: 90% !important;
     }
-    div.graphic_desc{
+
+    div.graphic:hover img {
         width: 90% !important;
-        text-align: center !important;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center !important;
+        position: relative;
+        transform: translate(0vw, 0);
     }
-    div.graphic_desc h2{
-        font-size: 12px !important;
+    div.graphic:hover{
+        width: 90%;
+        transform:translate(0,0px);
+        transform: translate(0vw, 0vw);
+    }
+
+    div.graphic_desc{
+        display: none;
     }
 
     div.graphic img{
@@ -531,10 +574,30 @@ footer{
         justify-content: center !important;
     }
     
-    
+    #navbar {
+        display: none;
+    }
 
+    #burger {
+        display: block;
+        overflow: hidden;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index: 1;
+        box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.479);
+    }
+    
+    #burger_links{
+        display: none;
+        background-color: black;
+    }
+    
     #burger a {
-        font-size: 24px!important;
+        padding: 14px, 16px;
+        display: block;
+        font-size: 18px!important;
         width: 30%!important;
     }
 
@@ -543,14 +606,18 @@ footer{
     }
     
     #burger a.icon {
+        display: block;
+        position: absolute;
         right: 10px!important;
         top: 10px!important;
         width: 25px!important;
+        color: rgb(255, 255, 255);
+        background-color: black;
     }
 
     #instagram a, #resume a{
-        width: 300px !important;
-        font-size: 30px !important;
+        width: 250px !important;
+        font-size: 18px !important;
         justify-content: center !important;
         text-align: center !important;
     }
@@ -567,12 +634,12 @@ footer{
 
 }
 /* Phone */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 767px) {
     *{
         font-weight: 400 !important;
     }
     #projects, section.graphics{
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, auto) !important;
     }
     
     #navbar {
@@ -667,16 +734,24 @@ footer{
         width: 90vw;
     }
     div.graphic:hover img {
-        width: 91vw;
+        width: 90vw;
         position: relative;
-        transform: translate(-.5vw, 0);
+        transform: translate(0vw, 0);
     }
-    div.graphic:hover div.graphic_desc{
-        width: 91vw;
-        height: 6.5vw;
-        transform:translate(0,-65px);
-        transform: translate(-.5vw, -1vw);
+    div.graphic:hover{
+        width: 90vw;
+        transform:translate(0,0px);
+        transform: translate(0vw, 0vw);
     }
+
+    div.graphic_desc {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+    
     h1, header, main, a.large, .contact, .contact h2{
         font-size: 72px;
     }
