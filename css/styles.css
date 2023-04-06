@@ -439,19 +439,35 @@ footer{
     to   { margin-top: 0%; }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1600px) {
+@media only screen and (max-width: 1600px) {
     #projects, section.graphics{
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, auto) !important;
+    }
+
+    #bio {
+        font-size: 14px !important;
     }
 
 }
 
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    body {
-        font-size: 12px;
 
-    };
+    #bio {
+        font-size: 16px !important;
+    }
+
+    #portrait {
+        width: 500px !important;
+    }
+
+    #position_title {
+        font-size: 30px!important;
+    }
+
+    h1 {
+        font-size: 48px !important;
+    }
 
     #projects, section.graphics{
         grid-template-columns: repeat(2, auto) !important;
@@ -530,6 +546,22 @@ footer{
         right: 10px!important;
         top: 10px!important;
         width: 25px!important;
+    }
+
+    #instagram a, #resume a{
+        width: 300px !important;
+        font-size: 30px !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .contact{
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 30px !important;
     }
 
 
