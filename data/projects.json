@@ -1,5 +1,5 @@
 {
-    "project0": {
+    "Aether": {
         "title": "AETHER",
         "imageUrl": "./media/images/projects/Aether.png",
         "imageAlt": "Aether",
@@ -8,7 +8,7 @@
         "linkUrl": "pages/aether.html",
         "linkText": "More"
     },
-    "project1": {
+    "Gauntlet": {
         "title": "GAUNTLET",
         "imageUrl": "media/images/projects/gauntlet.jpg",
         "imageAlt": "Gauntlet",
@@ -17,22 +17,13 @@
         "linkUrl": "https://www.youtube.com/watch?v=jqNyxWoclp8",
         "linkText": "Video Presentation"
     },
-    "project2": {
+    "Mage Match": {
         "title": "MAGE MATCH",
         "imageUrl": "media/images/projects/hex_game.png",
         "imageAlt": "Mage Match",
         "about": "You play as a wizard attempting to piece together a powerful spell. To build your masterpiece, you must match elemental components with each other to increase your magical output. Work quickly and keep your options open- if you make too many mistakes, your smell might fizzle out!",
         "role": "UI designer and 2D asset artist",
         "linkUrl": "https://nickmbaker.com/mage-match/",
-        "linkText": "Click here to play"
-    },
-    "project4": {
-        "title": "SLIME JUMP",
-        "imageUrl": "media/images/projects/slime_jump.png",
-        "imageAlt": "Slime Jump",
-        "about": "This game is similar to Doodle Jump. The player's goal is to beat his/her high score by jumping on the platforms as long as possible. If the player falls, he/she loses.",
-        "role": "Programmer and artist",
-        "linkUrl": "https://people.rit.edu/tmm8046/235/project3/",
         "linkText": "Click here to play"
     }
 

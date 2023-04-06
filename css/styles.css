@@ -205,7 +205,7 @@ a.large:hover{
 #proj{
     margin-bottom: 5px;
 }
-#art, #art3d, #conceptArt{
+#art, #art3d, #conceptArt, #shortComics{
     margin-bottom: 30px;
 }
 #proj, #art, #art3d{
@@ -370,7 +370,7 @@ div.graphic:hover div.graphic_desc{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    height: 90%;
+    height: 80%;
     width: auto;
     transition: all 1.0s ease-in-out;
 }
@@ -439,13 +439,103 @@ footer{
     to   { margin-top: 0%; }
 }
 
-@media screen and (max-width: 1600px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1600px) {
     #projects, section.graphics{
     grid-template-columns: repeat(2, auto);
     }
 
 }
-@media screen and (max-width: 1000px) {
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    body {
+        font-size: 12px;
+
+    };
+
+    #projects, section.graphics{
+        grid-template-columns: repeat(2, auto) !important;
+    }
+
+    #projects a {
+        font-size: 12px !important;
+
+    }
+
+    #projects h2 {
+        font-size: 24px !important;
+    }
+
+    div.project, div.flip img {
+        height:468px !important;
+        width:324px !important;
+    }
+    
+    .proj_desc{
+        font-size: 12px !important;
+    }
+    div.graphic{
+        min-height: 225px !important;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center !important;
+    }
+    div.graphic, div.graphic img {
+        width: 90% !important;
+    }
+    div.graphic_desc{
+        width: 90% !important;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center !important;
+    }
+    div.graphic_desc h2{
+        font-size: 12px !important;
+    }
+
+    div.graphic img{
+        box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.479);
+    }
+    div.graphic, div.graphic img{
+        width: 350px;
+    }
+    div.graphic_desc{
+        height: 0px;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    #projects, section.graphics{
+        width: 100% !important;
+        text-align: center !important;
+        grid-template-columns: repeat(2, auto) !important;
+        grid-template-rows: repeat(auto-fill, auto) !important;
+        justify-content: center !important;
+    }
+    
+    
+
+    #burger a {
+        font-size: 24px!important;
+        width: 30%!important;
+    }
+
+    #burger img {
+        height: 32px!important;
+    }
+    
+    #burger a.icon {
+        right: 10px!important;
+        top: 10px!important;
+        width: 25px!important;
+    }
+
+
+}
+/* Phone */
+@media only screen and (max-width: 1000px) {
     *{
         font-weight: 400 !important;
     }
@@ -595,6 +685,7 @@ footer{
         font-size: 36px;
     }
 }
+
 
 
 

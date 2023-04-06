@@ -1,0 +1,15 @@
+
+{
+    "Space Oddity": {
+        "title": "Space Oddity",
+        "imageUrl": "media/images/comics/space_oddity.png",
+        "imageAlt": "Space Oddity",
+        "type": "comic"
+    },
+    "HOB": {
+        "title": "House of Balloons",
+        "imageUrl": "media/images/comics/hob.png",
+        "imageAlt": "House of Balloons",
+        "type": "comic"
+    }
+}

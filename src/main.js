@@ -1,12 +1,14 @@
 const main = document.querySelector("main");
 const projects = document.querySelector("#projects");
 const _2dGallary = document.querySelector("#_2dGallary");
-const _3dGallary = document.querySelector("#_3dGallary");
+// const _3dGallary = document.querySelector("#_3dGallary");
+const comics = document.querySelector("#comics");
 const conceptArt = document.querySelector('#turnarounds');
 
 const projectURL = "./data/projects.json";
 const _2dURL = "./data/2d.json";
-const _3dURL = "./data/3d.json";
+// const _3dURL = "./data/3d.json";
+const comicsURL = "./data/comics.json";
 const turnaroundsURL = "./data/turnarounds.json";
 
 const init = () => {
@@ -14,7 +16,8 @@ const init = () => {
     document.querySelector("#burger_icon").onclick = burger;
     handleResponse(projectURL);
     handleResponse(_2dURL);
-    handleResponse(_3dURL);
+    // handleResponse(_3dURL);
+    handleResponse(comicsURL);
     handleResponse(turnaroundsURL);
     
 }
@@ -50,7 +53,10 @@ const handleResponse = async (url, method = "get") => {
         case _2dURL:
             loadArtwork(obj);
             break;
-        case _3dURL:
+        // case _3dURL:
+        //     loadArtwork(obj);
+        //     break;
+        case comicsURL:
             loadArtwork(obj);
             break;
         case turnaroundsURL:
@@ -139,12 +145,13 @@ const createArtwork = (title, imageUrl, imageAlt, type = "2D") => {
     h2.innerHTML = title;
     desc.appendChild(h2);
 
-    if (type === "3D") {
-        _3dGallary.appendChild(graphic);
+    if (type === "comic") {
+        comics.appendChild(graphic);
     }
-    else {
-        if(type === "2D") _2dGallary.appendChild(graphic);
-        else conceptArt.appendChild(graphic);
+    else if(type === "2D") {
+        _2dGallary.appendChild(graphic);
+    } else {
+        conceptArt.appendChild(graphic);
     }
 }
 
