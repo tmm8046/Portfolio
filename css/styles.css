@@ -666,7 +666,7 @@ footer{
         padding: 14px, 16px;
         display: block;
         font-size: 48px;
-        width: 30%;
+        width: 40%;
     }
 
     #burger img {
@@ -775,7 +775,7 @@ footer{
     }
     #bio{
         width: 80vw;
-        font-size: 24px;
+        font-size: 24px !important;
     }
     a.large{
         width: 600px;
