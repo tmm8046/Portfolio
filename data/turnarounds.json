@@ -1,14 +1,26 @@
 {
-    "2d0": {
+    "Okami": {
         "title": "Okami",
         "imageUrl": "media/images/turnarounds/Okami.png",
         "imageAlt": "Okami",
         "type": "Concept"
     },
-    "2d1": {
+    "Nessa": {
         "title": "Nessa",
         "imageUrl": "media/images/turnarounds/Nessa.png",
         "imageAlt": "Nessa",
+        "type": "Concept"
+    },
+    "Ava1": {
+        "title": "Ava (Senator)",
+        "imageUrl": "media/images/turnarounds/Ava_(Senator).png",
+        "imageAlt": "Ava (Senator)",
+        "type": "Concept"
+    },
+    "Ava2": {
+        "title": "Ava (Hunter)",
+        "imageUrl": "media/images/turnarounds/Ava_(Hunter).png",
+        "imageAlt": "Ava (Hunter)",
         "type": "Concept"
     }
 

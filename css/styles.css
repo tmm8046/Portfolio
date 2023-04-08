@@ -249,6 +249,9 @@ div.contact{
     padding-bottom: 13%;
     justify-content: center;
 }
+#turnarounds {
+    grid-template-columns: repeat(2, auto);
+}
 #_3dGallary{
     margin-bottom: 50px;
     padding-bottom: 50px;
@@ -442,6 +445,10 @@ footer{
 @media only screen and (max-width: 1600px) {
     #projects, section.graphics{
     grid-template-columns: repeat(2, auto) !important;
+    }
+
+    #turnarounds {
+        grid-template-columns: repeat(1, auto) !important;
     }
 
     #bio {
